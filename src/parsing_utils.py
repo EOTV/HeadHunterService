@@ -14,7 +14,7 @@ def get_all_regions() -> List[str]:
     ).json()
     return [str(region["id"]) for region in regions[0]["areas"]]
 
-def get_count_vacancies(job_title: str) -> dict[str, dict[str, int]]:
+def get_mean_salary(job_title: str) -> dict[str, dict[str, int]]:
     """
     Функция принимающая на вход профессию, и список всех регионов в России.
     Возвращает: {
@@ -43,3 +43,6 @@ def get_count_vacancies(job_title: str) -> dict[str, dict[str, int]]:
         "Количество вакансий в России.": len(mean_salary_by_region) * config.VACANCY_FACTOR
     }
     return result_row
+
+def get_count_vacancies():
+    pass
