@@ -3,6 +3,15 @@ import config
 import fake_useragent
 from typing import List
 
+from selenium import webdriver
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
+
+import re
+
+
+
 def get_all_regions() -> List[str]:
     """
     Функция возвращающая, номера всех регионов в России.
@@ -44,5 +53,12 @@ def get_mean_salary(job_title: str) -> dict[str, dict[str, int]]:
     }
     return result_row
 
-def get_count_vacancies():
-    pass
+def get_count_vacancies(job_title: str):
+    URL = fr'https://hh.ru/search/vacancy?text={job_title}'
+
+    service = webdriver.ChromeService(executable_path='chromedriver.exe')
+    driver = webdriver.Chrome(service=service)
+    driver.get(URL)
+
+    el = driver.find_element(By.XPATH, "//h1[@data-qa='bloko-header-3']")
+    return int(''.join(re.findall(r'\d+', el.text)))
