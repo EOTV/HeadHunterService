@@ -1,0 +1,162 @@
+1699083530182	geckodriver	INFO	Listening on 127.0.0.1:49364
+1699083530694	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/ln/l54hjc713kxgxkw6rfxxgyh00000gn/T/rust_mozprofile2VYC7H"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1699083530992	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1699083531199	Marionette	INFO	Listening on port 49405
+WebDriver BiDi listening on ws://127.0.0.1:49365
+Read port: 49405
+1699083531298	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://127.0.0.1:49365/devtools/browser/e41b4ffc-3255-4c95-b9b3-9592449d4590
+JavaScript error: resource:///modules/sessionstore/SessionStore.sys.mjs, line 3741: TypeError: this._windows[aWindow.__SSi] is undefined
+1699083555845	Marionette	INFO	Stopped listening on port 49405
+console.error: "Failed to fetch https://spocs.getpocket.com/user:" "NetworkError when attempting to fetch resource."
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1699083594657	geckodriver	INFO	Listening on 127.0.0.1:49518
+1699083595173	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/ln/l54hjc713kxgxkw6rfxxgyh00000gn/T/rust_mozprofile9WzGTt"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1699083595463	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1699083595679	Marionette	INFO	Listening on port 49526
+WebDriver BiDi listening on ws://127.0.0.1:49519
+Read port: 49526
+1699083595757	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://127.0.0.1:49519/devtools/browser/8f5dd312-4846-4e8c-90b5-4e4ce0bb8564
+1699083596453	geckodriver	INFO	Listening on 127.0.0.1:49530
+1699083596961	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/ln/l54hjc713kxgxkw6rfxxgyh00000gn/T/rust_mozprofilearNpc5"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1699083597218	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1699083597412	Marionette	INFO	Listening on port 49544
+WebDriver BiDi listening on ws://127.0.0.1:49531
+Read port: 49544
+1699083597549	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://127.0.0.1:49531/devtools/browser/5806ee1a-9f3e-4471-8f2e-d8847d97be59
+JavaScript warning: https://i.hh.ru/webpackBuild/hhgfhp.3528cbc1d26a83458e6d.js, line 12: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://i.hh.ru/webpackBuild/hhgfhp.3528cbc1d26a83458e6d.js, line 12: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: drawArraysInstanced: Drawing to a destination rect smaller than the viewport rect. (This warning will only be given once)
+JavaScript warning: https://i.hh.ru/webpackBuild/hhgfhp.3528cbc1d26a83458e6d.js, line 12: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1699083626294	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1699083627240	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1699083630381	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1699083768041	geckodriver	INFO	Listening on 127.0.0.1:49815
+1699083768553	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/ln/l54hjc713kxgxkw6rfxxgyh00000gn/T/rust_mozprofilew0emFC"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1699083768867	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1699083768966	Marionette	INFO	Listening on port 49823
+Read port: 49823
+WebDriver BiDi listening on ws://127.0.0.1:49816
+1699083769072	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://127.0.0.1:49816/devtools/browser/db98131a-0e03-4f41-84f8-2981408b1dff
+1699083770192	geckodriver	INFO	Listening on 127.0.0.1:49831
+1699083770711	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/ln/l54hjc713kxgxkw6rfxxgyh00000gn/T/rust_mozprofileDgBS7z"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1699083771009	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1699083771100	Marionette	INFO	Listening on port 49842
+WebDriver BiDi listening on ws://127.0.0.1:49832
+Read port: 49842
+1699083771153	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://127.0.0.1:49832/devtools/browser/6e8d6f64-b425-4d98-b1a0-dc684ee9f8b1
+JavaScript warning: https://i.hh.ru/webpackBuild/hhgfhp.3528cbc1d26a83458e6d.js, line 12: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://i.hh.ru/webpackBuild/hhgfhp.3528cbc1d26a83458e6d.js, line 12: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: drawArraysInstanced: Drawing to a destination rect smaller than the viewport rect. (This warning will only be given once)
+JavaScript warning: https://i.hh.ru/webpackBuild/hhgfhp.3528cbc1d26a83458e6d.js, line 12: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1699083798996	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1699083801038	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1699083804607	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1699083804879	geckodriver	INFO	Listening on 127.0.0.1:50014
+1699083805397	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/ln/l54hjc713kxgxkw6rfxxgyh00000gn/T/rust_mozprofileQwl3Rh"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1699083805690	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1699083805888	Marionette	INFO	Listening on port 50022
+WebDriver BiDi listening on ws://127.0.0.1:50015
+Read port: 50022
+1699083805987	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://127.0.0.1:50015/devtools/browser/e2dabf61-6227-48c3-9e40-79b71a8ec3b5
+1699083807017	geckodriver	INFO	Listening on 127.0.0.1:50028
+1699083807526	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/ln/l54hjc713kxgxkw6rfxxgyh00000gn/T/rust_mozprofilezKHtwc"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1699083807785	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1699083807994	Marionette	INFO	Listening on port 50039
+WebDriver BiDi listening on ws://127.0.0.1:50029
+Read port: 50039
+1699083808107	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://127.0.0.1:50029/devtools/browser/a5500064-a306-4641-868b-219bb0e675dd
+JavaScript warning: , line 0: WebGL warning: drawArraysInstanced: Drawing to a destination rect smaller than the viewport rect. (This warning will only be given once)
+JavaScript warning: https://i.hh.ru/webpackBuild/hhgfhp.3528cbc1d26a83458e6d.js, line 12: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://i.hh.ru/webpackBuild/hhgfhp.3528cbc1d26a83458e6d.js, line 12: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://i.hh.ru/webpackBuild/hhgfhp.3528cbc1d26a83458e6d.js, line 12: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1699083836052	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1699083838100	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1699083841143	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1699083844909	Marionette	INFO	Stopped listening on port 49526
+1699083847400	Marionette	INFO	Stopped listening on port 49544
+1699083849384	Marionette	INFO	Stopped listening on port 49823
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 133: Script terminated by timeout at:
+B/<@https://mc.yandex.ru/metrika/tag.js:133:66
+
+1699083851914	Marionette	INFO	Stopped listening on port 49842
+1699083853723	Marionette	INFO	Stopped listening on port 50022
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 133: Script terminated by timeout at:
+B@https://mc.yandex.ru/metrika/tag.js:133:23
+a.prototype.Zb@https://mc.yandex.ru/metrika/tag.js:248:277
+
+1699083857073	Marionette	INFO	Stopped listening on port 50039
+1699083868130	geckodriver	INFO	Listening on 127.0.0.1:50250
+1699083868642	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/ln/l54hjc713kxgxkw6rfxxgyh00000gn/T/rust_mozprofileBArgzm"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1699083868939	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1699083869141	Marionette	INFO	Listening on port 50258
+WebDriver BiDi listening on ws://127.0.0.1:50251
+Read port: 50258
+1699083869243	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://127.0.0.1:50251/devtools/browser/61dc2a79-b87e-4ccb-a95c-791d9154f8ea
+1699083869883	geckodriver	INFO	Listening on 127.0.0.1:50265
+1699083870391	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/ln/l54hjc713kxgxkw6rfxxgyh00000gn/T/rust_mozprofileTr3Hcd"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1699083870650	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1699083870846	Marionette	INFO	Listening on port 50277
+WebDriver BiDi listening on ws://127.0.0.1:50266
+Read port: 50277
+1699083870946	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://127.0.0.1:50266/devtools/browser/3ba8d543-5e7d-41e9-a051-594776177dc7
+JavaScript warning: https://i.hh.ru/webpackBuild/hhgfhp.3528cbc1d26a83458e6d.js, line 12: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://i.hh.ru/webpackBuild/hhgfhp.3528cbc1d26a83458e6d.js, line 12: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: drawArraysInstanced: Drawing to a destination rect smaller than the viewport rect. (This warning will only be given once)
+JavaScript warning: https://i.hh.ru/webpackBuild/hhgfhp.3528cbc1d26a83458e6d.js, line 12: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1699083899412	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1699083900743	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1699083903793	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://cdn.uxfeedback.ru/assets-3.12.1/1.59a0192c9449cd97d573.js, line 1: Script terminated by timeout at:
+L_@https://cdn.uxfeedback.ru/assets-3.12.1/1.59a0192c9449cd97d573.js:1:23462
+ie/window.onpagehide@https://cdn.uxfeedback.ru/assets-3.12.1/1.59a0192c9449cd97d573.js:1:20421
+
+JavaScript warning: , line 0: WebGL warning: drawArraysInstanced: Drawing to a destination rect smaller than the viewport rect. (This warning will only be given once)
+JavaScript warning: https://i.hh.ru/webpackBuild/hhgfhp.3528cbc1d26a83458e6d.js, line 12: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://i.hh.ru/webpackBuild/hhgfhp.3528cbc1d26a83458e6d.js, line 12: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://i.hh.ru/webpackBuild/hhgfhp.3528cbc1d26a83458e6d.js, line 12: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1699083935116	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.

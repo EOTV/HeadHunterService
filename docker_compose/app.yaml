@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: hh_parsingg 
+    build: ..
+    command: pyhton3 main.py
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: bridge

@@ -1,1 +1,4 @@
-./src/notebooks
+./src/notebooks/
+venv/
+README.md
+.gitignore

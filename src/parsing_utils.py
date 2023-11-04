@@ -1,14 +1,11 @@
+import re
 import requests
 import config
 import fake_useragent
 from typing import List
 
-from selenium import webdriver
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver import Firefox
 from selenium.webdriver.common.by import By
-
-import re
 
 
 
@@ -22,6 +19,17 @@ def get_all_regions() -> List[str]:
         headers={"user_agent": user_agent.random}
     ).json()
     return [str(region["id"]) for region in regions[0]["areas"]]
+
+
+#driver = Firefox(executable_path='geckodriver')
+
+def get_count_vacancies(job_title: str, driver: selenium.webdriver) -> int:
+    URL = fr'https://hh.ru/search/vacancy?text={job_title}'
+
+    driver.get(URL)
+
+    el = driver.find_element(By.XPATH, "//h1[@data-qa='bloko-header-3']")
+    return int(''.join(re.findall(r'\d+', el.text)))
 
 def get_mean_salary(job_title: str) -> dict[str, dict[str, int]]:
     """
@@ -49,16 +57,6 @@ def get_mean_salary(job_title: str) -> dict[str, dict[str, int]]:
             
     result_row[job_title] = {
         "Средняя зарплата.": int(sum(mean_salary_by_region) / len(mean_salary_by_region)),
-        "Количество вакансий в России.": len(mean_salary_by_region) * config.VACANCY_FACTOR
+        "Количество вакансий в России.": 0
     }
     return result_row
-
-def get_count_vacancies(job_title: str):
-    URL = fr'https://hh.ru/search/vacancy?text={job_title}'
-
-    service = webdriver.ChromeService(executable_path='chromedriver.exe')
-    driver = webdriver.Chrome(service=service)
-    driver.get(URL)
-
-    el = driver.find_element(By.XPATH, "//h1[@data-qa='bloko-header-3']")
-    return int(''.join(re.findall(r'\d+', el.text)))
