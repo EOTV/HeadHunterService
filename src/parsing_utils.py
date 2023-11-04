@@ -4,34 +4,12 @@ import config
 import fake_useragent
 from typing import List
 
-from selenium.webdriver import Firefox
 from selenium.webdriver.common.by import By
 
-
-
-def get_all_regions() -> List[str]:
-    """
-    Функция возвращающая, номера всех регионов в России.
-    """
-    user_agent = fake_useragent.UserAgent()
-    regions = requests.get(
-        url=config.REGIONS_URL,
-        headers={"user_agent": user_agent.random}
-    ).json()
-    return [str(region["id"]) for region in regions[0]["areas"]]
-
-
-#driver = Firefox(executable_path='geckodriver')
-
-def get_count_vacancies(job_title: str, driver: selenium.webdriver) -> int:
-    URL = fr'https://hh.ru/search/vacancy?text={job_title}'
-
-    driver.get(URL)
-
-    el = driver.find_element(By.XPATH, "//h1[@data-qa='bloko-header-3']")
-    return int(''.join(re.findall(r'\d+', el.text)))
-
-def get_mean_salary(job_title: str) -> dict[str, dict[str, int]]:
+def get_info_by_vacancies(
+        job_title: str, 
+        driver
+    ) -> dict[str, dict[str, int]]:
     """
     Функция принимающая на вход профессию, и список всех регионов в России.
     Возвращает: {
@@ -40,23 +18,53 @@ def get_mean_salary(job_title: str) -> dict[str, dict[str, int]]:
             "count_vacancies": int
     }}
     """
+    def get_all_regions() -> List[str]:
+        """
+        Функция возвращающая, номера всех регионов в России.
+        """
+        user_agent = fake_useragent.UserAgent()
+        regions = requests.get(
+            url=config.REGIONS_URL,
+            headers={"user_agent": user_agent.random}
+        ).json()
+        return [str(region["id"]) for region in regions[0]["areas"]]
+    
+    def get_count_vacancies(job_title: str) -> int:
+        url = fr'https://hh.ru/search/vacancy?text={job_title}'
+        driver.get(url)
+
+        el = driver.find_element(By.XPATH, "//h1[@data-qa='bloko-header-3']")
+        return int(''.join(re.findall(r'\d+', el.text)))
+    
     user_agent = fake_useragent.UserAgent()
     mean_salary_by_region = []
+
     result_row = {}
     for region in get_all_regions():
         url = f"https://api.hh.ru/vacancies?clusters=true&only_with_salary=true&enable_snippets=true&st=searchVacancy' \
             '&text={job_title}&search_field=name&per_page=100&area={region}"
+        
         vacancies = requests.get(
             url=url,
             headers={"user_agent": user_agent.random}                    
         ).json()
-        for vacancy in vacancies["items"]:
-            if vacancy["salary"]["from"] is None:
-                continue
+
+        try:
+            for vacancy in vacancies["items"]:
+                if vacancy["salary"]["from"] is None:
+                    continue
             mean_salary_by_region.append(vacancy["salary"]["from"])
+        except:
+            continue
             
-    result_row[job_title] = {
-        "Средняя зарплата.": int(sum(mean_salary_by_region) / len(mean_salary_by_region)),
-        "Количество вакансий в России.": 0
-    }
+    try:
+        result_row[job_title] = {
+            "Средняя зарплата.": int(sum(mean_salary_by_region) / len(mean_salary_by_region)),
+            "Количество вакансий в России.": get_count_vacancies(job_title=job_title)
+        }
+    except:
+        result_row[job_title] = {
+            "Средняя зарплата.": 0,
+            "Количество вакансий в России.": "Не найдено."
+        }
     return result_row

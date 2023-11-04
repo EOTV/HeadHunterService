@@ -8,5 +8,6 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
+RUN mkdir data
 RUN cd src/
 CMD python main.py
