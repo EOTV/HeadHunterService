@@ -28,7 +28,7 @@ def get_info_by_vacancies(
             url=config.REGIONS_URL,
             headers={"user_agent": user_agent.random}
         ).json()
-        return [str(region["id"]) for region in regions[0]["areas"]]
+        return [int(region["id"]) for region in regions[0]["areas"]]
     
     def get_count_vacancies(job_title: str) -> int:
         url = fr'https://hh.ru/search/vacancy?text={job_title}'
@@ -72,4 +72,4 @@ def get_info_by_vacancies(
 
 def create_json_file(data: dict, path_to_save: str="./") -> None:
     with open(path_to_save + "output.json", "w") as output_file:
-        json.dump(data, output_file)
+        json.dump(data, output_file, ensure_ascii=False)

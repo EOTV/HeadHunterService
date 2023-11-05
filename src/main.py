@@ -16,7 +16,6 @@ def main():
         result_data.append(get_info_by_vacancies(job_title=job_title, driver=driver))
 
     create_json_file(data=result_data, path_to_save="../")
-    print("Done.")
 
 if __name__ == "__main__":
     main()
