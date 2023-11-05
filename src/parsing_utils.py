@@ -1,4 +1,5 @@
 import re
+import json
 import requests
 import config
 import fake_useragent
@@ -68,3 +69,7 @@ def get_info_by_vacancies(
             "Количество вакансий в России.": "Не найдено."
         }
     return result_row
+
+def create_json_file(data: dict, path_to_save: str="./") -> None:
+    with open(path_to_save + "output.json", "w") as output_file:
+        json.dump(data, output_file)
