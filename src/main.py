@@ -2,20 +2,23 @@ import pandas as pd
 
 from selenium.webdriver import Firefox
 from selenium.webdriver.firefox.service import Service
+
 from parsing_utils import get_info_by_vacancies
 from parsing_utils import create_json_file
 
+import config
+
 def main():
-    service = Service(executable_path="./repositories/geckodriver")
+    service = Service(executable_path=config.PATH_TO_DRIVER)
     driver = Firefox(service=service)
 
     result_data = []
 
-    job_titles = pd.read_csv('./repositories/proffesions.csv')["prof_name"].values
+    job_titles = pd.read_csv(config.JOB_TITLE_PATH)["prof_name"].values
     for job_title in job_titles[:2]:
         result_data.append(get_info_by_vacancies(job_title=job_title, driver=driver))
 
-    create_json_file(data=result_data, path_to_save="../")
+    create_json_file(data=result_data, path_to_save=config.DATA_TRANSFER_FOLDER)
 
 if __name__ == "__main__":
     main()
