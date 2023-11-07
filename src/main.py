@@ -2,6 +2,8 @@ import pandas as pd
 
 from selenium.webdriver import Firefox
 from selenium.webdriver.firefox.service import Service
+from selenium.webdriver import FirefoxOptions
+
 
 from parsing_utils import get_info_by_vacancies
 from parsing_utils import create_json_file
@@ -9,8 +11,12 @@ from parsing_utils import create_json_file
 import config
 
 def main():
+    options = FirefoxOptions()
+    options.add_argument("--headless")
+
     service = Service(executable_path=config.PATH_TO_DRIVER)
-    driver = Firefox(service=service)
+    
+    driver = Firefox(service=service, options=options)
 
     result_data = []
 
