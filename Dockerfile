@@ -30,12 +30,19 @@ RUN set -x \
    && tar zxf geckodriver-*.tar.gz \
    && mv geckodriver /usr/bin/
 
-WORKDIR /hh_parsing
-
-COPY . .
+RUN mkdir hh_parsing
+COPY . ./hh_parsing
 
 RUN pip install --upgrade setuptools
 RUN pip install --upgrade pip
-RUN pip install -r requirements.txt
+RUN pip install -r ./hh_parsing/requirements.txt
 
-CMD bash init.sh
+RUN apt-get update \
+    && apt-get install -y tar \
+    && tar xvzf geckodriver-v0.33.0-linux64.tar.gz \
+    && tar xvjf firefox-87.0.tar.bz2 \
+    && mv geckodriver hh_parsing/src/repositories/
+
+WORKDIR /hh_parsing/src
+
+CMD ["python", "main.py"]
