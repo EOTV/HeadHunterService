@@ -45,9 +45,11 @@ def get_info_by_vacancies(
         url = f"https://api.hh.ru/vacancies?clusters=true&only_with_salary=true&enable_snippets=true&st=searchVacancy' \
             '&text={job_title}&search_field=name&per_page=100&area={region}"
         
+        headers = requests.utils.default_headers()
+        headers.update({"User-Agent": user_agent.random})
         vacancies = requests.get(
             url=url,
-            headers={"user_agent": user_agent.random}                    
+            headers=headers                   
         ).json()
 
         try:

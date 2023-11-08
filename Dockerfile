@@ -1,6 +1,4 @@
 FROM python:3.10-bullseye
-
-RUN mkdir data_transfer
  
 ENV DEBIAN_FRONTEND noninteractive
 ENV GECKODRIVER_VER v0.33.0
@@ -40,6 +38,4 @@ RUN pip install --upgrade setuptools
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
-RUN cd src/
-
-ENTRYPOINT [ "bash" ]
+CMD bash init.sh
