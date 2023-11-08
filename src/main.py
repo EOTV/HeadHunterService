@@ -21,7 +21,7 @@ def main():
     result_data = []
 
     job_titles = pd.read_csv(config.JOB_TITLE_PATH)["prof_name"].values
-    for job_title in job_titles[:2]:
+    for job_title in job_titles:
         current_vacancies = get_info_by_vacancies(job_title=job_title, driver=driver)
 
         result_data.append(current_vacancies)
