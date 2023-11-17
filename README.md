@@ -6,7 +6,7 @@
 ```bash
 docker pull justpain/hh_parsing:v0.1.0
 ```
-* Далее необходимо запустить его указав путь до директории куда будет загружен файл формата .json командой:
+* Далее необходимо запустить его указав путь до директории куда будет загружен файл формата .json командой:чц
 ```bash
 docker run -d -v <your_path>:/hh_parsing/src/repositories hh_parsing:latest
 ```

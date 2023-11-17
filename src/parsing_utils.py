@@ -1,11 +1,12 @@
 import re
 import json
 import requests
-import config
 import fake_useragent
 from typing import List
 
 from selenium.webdriver.common.by import By
+
+import config
 
 def get_info_by_vacancies(
         job_title: str, 
@@ -32,16 +33,18 @@ def get_info_by_vacancies(
     
     def get_count_vacancies(job_title: str) -> int:
         url = fr'https://hh.ru/search/vacancy?text={job_title}'
-        driver.get(url)
+        driver.get(
+            url                    
+        )
 
         el = driver.find_element(By.XPATH, "//h1[@data-qa='bloko-header-3']")
         return int(''.join(re.findall(r'\d+', el.text)))
     
-    user_agent = fake_useragent.UserAgent()
     mean_salary_by_region = []
 
-    result_row = {}
-    for region in get_all_regions():
+    user_agent = fake_useragent.UserAgent()
+
+    for region in [config.MOSCOW_REGION_CODE, config.MOSCOW_AREA_CODE, config.SPB_REGIONC_CODE]:
         url = f"https://api.hh.ru/vacancies?clusters=true&only_with_salary=true&enable_snippets=true&st=searchVacancy' \
             '&text={job_title}&search_field=name&per_page=100&area={region}"
         
@@ -59,18 +62,19 @@ def get_info_by_vacancies(
             mean_salary_by_region.append(vacancy["salary"]["from"])
         except:
             continue
-            
+    
     try:
-        result_row[job_title] = {
-            "Средняя зарплата.": int(sum(mean_salary_by_region) / len(mean_salary_by_region)),
-            "Количество вакансий в России.": get_count_vacancies(job_title=job_title)
-        }
+        vacancies_name = job_title
+        count_vacancies = int(sum(mean_salary_by_region) / len(mean_salary_by_region))
+        mean_salary = get_count_vacancies(job_title=job_title)
+
+        return vacancies_name, count_vacancies, mean_salary
     except:
-        result_row[job_title] = {
-            "Средняя зарплата.": 0,
-            "Количество вакансий в России.": "Не найдено."
-        }
-    return result_row
+        vacancies_name = job_title
+        count_vacancies = 0
+        mean_salary = "Не найденно."
+
+        return vacancies_name, count_vacancies, mean_salary
 
 def create_json_file(data: dict, path_to_save: str="./") -> None:
     with open(path_to_save + "output.json", "w") as output_file:

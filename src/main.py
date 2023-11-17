@@ -1,3 +1,5 @@
+import time
+
 import pandas as pd
 
 from selenium.webdriver import Firefox
@@ -18,15 +20,28 @@ def main():
 
     driver = Firefox(service=service, options=options)
 
-    result_data = []
-
+    result_data = {
+        "VacanciesName": [],
+        "CountVacancies": [],
+        "MeanSalary": []
+    }
+    
     job_titles = pd.read_csv(config.JOB_TITLE_PATH)["prof_name"].values
     for job_title in job_titles:
-        current_vacancies = get_info_by_vacancies(job_title=job_title, driver=driver)
+        try:
+            vacancies_name, count_vacancies, mean_salary = get_info_by_vacancies(
+                job_title=job_title, driver=driver
+            )
 
-        result_data.append(current_vacancies)
+            result_data["VacanciesName"].append(vacancies_name)
+            result_data["CountVacancies"].append(count_vacancies)
+            result_data["MeanSalary"].append(mean_salary)
 
-        print(current_vacancies)
+            print(
+                f"| Название вакансии - {vacancies_name} | Кол-во вакансий - {count_vacancies} | Средняя зп - {mean_salary} |"
+            )
+        except:
+            continue
 
     create_json_file(data=result_data, path_to_save=config.DATA_TRANSFER_FOLDER)
 
