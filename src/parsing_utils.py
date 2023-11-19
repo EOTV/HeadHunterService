@@ -65,8 +65,8 @@ def get_info_by_vacancies(
     
     try:
         vacancies_name = job_title
-        count_vacancies = int(sum(mean_salary_by_region) / len(mean_salary_by_region))
-        mean_salary = get_count_vacancies(job_title=job_title)
+        count_vacancies = get_count_vacancies(job_title=job_title) 
+        mean_salary = int(sum(mean_salary_by_region) / len(mean_salary_by_region))
 
         return vacancies_name, count_vacancies, mean_salary
     except:

@@ -16,7 +16,8 @@ def main():
     options = FirefoxOptions()
     options.add_argument("--headless")
 
-    service = Service(executable_path=config.PATH_TO_DRIVER)
+    #executable_path=config.PATH_TO_DRIVER
+    service = Service()
 
     driver = Firefox(service=service, options=options)
 
