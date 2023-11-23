@@ -1,0 +1,60 @@
+1700716662428	geckodriver	INFO	Listening on 127.0.0.1:53256
+1700716662909	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/ln/l54hjc713kxgxkw6rfxxgyh00000gn/T/rust_mozprofileaR9Fha"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1700716663313	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1700716663521	Marionette	INFO	Listening on port 53282
+Read port: 53282
+WebDriver BiDi listening on ws://127.0.0.1:53257
+1700716663608	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+DevTools listening on ws://127.0.0.1:53257/devtools/browser/cdfcf813-85a1-47eb-9e5b-bf378133e34e
+JavaScript warning: , line 0: WebGL warning: drawArraysInstanced: Drawing to a destination rect smaller than the viewport rect. (This warning will only be given once)
+JavaScript warning: https://i.hh.ru/webpackBuild/hhgfhp.3528cbc1d26a83458e6d.js, line 12: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://i.hh.ru/webpackBuild/hhgfhp.3528cbc1d26a83458e6d.js, line 12: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://i.hh.ru/webpackBuild/hhgfhp.3528cbc1d26a83458e6d.js, line 12: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1700716694298	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1700716727277	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://cdn.uxfeedback.ru/assets-3.12.2/1.63d9245c46df8ca6e80d.js, line 1: Script terminated by timeout at:
+L_@https://cdn.uxfeedback.ru/assets-3.12.2/1.63d9245c46df8ca6e80d.js:1:23534
+re/window.onpagehide@https://cdn.uxfeedback.ru/assets-3.12.2/1.63d9245c46df8ca6e80d.js:1:20493
+
+JavaScript warning: , line 0: WebGL warning: drawArraysInstanced: Drawing to a destination rect smaller than the viewport rect. (This warning will only be given once)
+JavaScript warning: https://i.hh.ru/webpackBuild/hhgfhp.3528cbc1d26a83458e6d.js, line 12: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://i.hh.ru/webpackBuild/hhgfhp.3528cbc1d26a83458e6d.js, line 12: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://i.hh.ru/webpackBuild/hhgfhp.3528cbc1d26a83458e6d.js, line 12: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1700716785617	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://cdn.uxfeedback.ru/assets-3.12.2/1.63d9245c46df8ca6e80d.js, line 1: Script terminated by timeout at:
+L_@https://cdn.uxfeedback.ru/assets-3.12.2/1.63d9245c46df8ca6e80d.js:1:23534
+re/window.onpagehide@https://cdn.uxfeedback.ru/assets-3.12.2/1.63d9245c46df8ca6e80d.js:1:20493
+
+JavaScript warning: , line 0: WebGL warning: drawArraysInstanced: Drawing to a destination rect smaller than the viewport rect. (This warning will only be given once)
+JavaScript warning: https://i.hh.ru/webpackBuild/hhgfhp.3528cbc1d26a83458e6d.js, line 12: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://i.hh.ru/webpackBuild/hhgfhp.3528cbc1d26a83458e6d.js, line 12: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://i.hh.ru/webpackBuild/hhgfhp.3528cbc1d26a83458e6d.js, line 12: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1700716844362	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://cdn.uxfeedback.ru/assets-3.12.2/1.63d9245c46df8ca6e80d.js, line 1: Script terminated by timeout at:
+L_@https://cdn.uxfeedback.ru/assets-3.12.2/1.63d9245c46df8ca6e80d.js:1:23534
+re/window.onpagehide@https://cdn.uxfeedback.ru/assets-3.12.2/1.63d9245c46df8ca6e80d.js:1:20493
+
+JavaScript warning: , line 0: WebGL warning: drawArraysInstanced: Drawing to a destination rect smaller than the viewport rect. (This warning will only be given once)
+JavaScript warning: https://i.hh.ru/webpackBuild/hhgfhp.3528cbc1d26a83458e6d.js, line 12: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://i.hh.ru/webpackBuild/hhgfhp.3528cbc1d26a83458e6d.js, line 12: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://i.hh.ru/webpackBuild/hhgfhp.3528cbc1d26a83458e6d.js, line 12: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1700716907641	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://cdn.uxfeedback.ru/assets-3.12.2/1.63d9245c46df8ca6e80d.js, line 1: Script terminated by timeout at:
+L_@https://cdn.uxfeedback.ru/assets-3.12.2/1.63d9245c46df8ca6e80d.js:1:23534
+re/window.onpagehide@https://cdn.uxfeedback.ru/assets-3.12.2/1.63d9245c46df8ca6e80d.js:1:20493
+
+JavaScript warning: , line 0: WebGL warning: drawArraysInstanced: Drawing to a destination rect smaller than the viewport rect. (This warning will only be given once)
+JavaScript warning: https://i.hh.ru/webpackBuild/hhgfhp.3528cbc1d26a83458e6d.js, line 12: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://i.hh.ru/webpackBuild/hhgfhp.3528cbc1d26a83458e6d.js, line 12: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://i.hh.ru/webpackBuild/hhgfhp.3528cbc1d26a83458e6d.js, line 12: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
